@@ -10,14 +10,17 @@
         </div>
 
         <div id="main" style="display: flex; justify-content: center;">
-            <div class="guess_box"><img src="/images/jump1.jpg"></div>
-            <div class="guess_box"><img src="/images/jump2.png"></div>
-            <div class="guess_box"><img src="/images/jump3.jpg"></div>
-            <div class="guess_box"><img src="/images/jump4.jpg"></div>
+            <div class="guess_box"><img class='cat-img a b' src="/images/jump1.jpg"></div>
+            <div class="guess_box"><img class='cat-img' src="/images/jump2.png"></div>
+            <div class="guess_box"><img class='cat-img' src="/images/jump3.jpg"></div>
+            <div class="guess_box"><img class='cat-img' src="/images/jump4.jpg"></div>
         </div>    
-    <script src="/scripts/jquery-1.6.2.min.js"></script>
+
+        <button id="btn_300_300">300x300</button>
+    <script src="/scripts/jquery-1.6.2.min.js"></script> 
     <script>
-            $(document).ready(function(){
+            //구버전 $(document).ready(function(){
+            $(function(){
                 $(".guess_box").click(function(){
                     var discount = Math.floor((Math.random()*5)+5);
                     var discount_msg = "<p>최대"+discount+"%</p>";
@@ -28,6 +31,17 @@
                     $(this).append(discount_msg);
                 });
             });   
+
+            $(function(){
+                $('#btn_300_300').click(function(){
+                    $('img.cat-img')
+                        .css('border', 'solid 5px red')
+                        .attr({
+                            'width': '300',
+                            'height': '300'
+                        });
+                });
+            });
     </script>
     </body>
 </html>
