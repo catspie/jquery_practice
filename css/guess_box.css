@@ -14,4 +14,13 @@ img {
     width: 300px;
     height: 150px;
     object-fit: cover;
-  }
+}
+
+.discount{
+    border: solid #f00 3px;
+}
+
+.no_discount{
+    border: solid #000 3px;
+}
+
