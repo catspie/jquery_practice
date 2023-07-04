@@ -1,9 +1,9 @@
+
 div{
     float: left;
     height: 245px;
     text-align: left;
     border: solid #000 3px;
-
 }
 
 #header{
@@ -15,4 +15,5 @@ div{
 #main{
     background-color: grey;
     height: 500px;
+    display: flex;
 }
