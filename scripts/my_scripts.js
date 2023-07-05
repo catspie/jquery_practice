@@ -53,7 +53,7 @@ $(".guess_box").each(function(){
     }
     $(this).unbind();         
 });
-};
+}
 
 $(function(){
     $('#btn_300_300').click(function(){
