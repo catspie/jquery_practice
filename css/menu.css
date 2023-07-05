@@ -1,0 +1,25 @@
+#header{
+    padding-left: 210px;
+}
+
+.menu_entrees{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    text-align: center;
+    background-color: antiquewhite;
+    width: 700px;
+}
+
+ul li {
+    list-style: none;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    width: 600px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+}
