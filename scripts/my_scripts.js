@@ -37,19 +37,23 @@ $(function(){
         
         //한 번 실행될 때마다 discount금액이 얼마인지 나타내주는 기능 
         //$(".guess_box").append(discount_msg);
-        //alert("축하! "+discount+"%할인 당첨");
-        
-        $(".guess_box").each(function(){
-            if($.contains(this, document.getElementById("has_discount"))){
-                $(this).addClass("disocount");
-            }else{
-                $(this).addClass("no_discount");
-            }
-            $(this).unbind();         
-      });
+        //alert("축하! "+discount+"%할인 당첨"); 
+       
       $("#result").append(discount_msg);
     }    
 });   
+
+
+function addclass(){
+$(".guess_box").each(function(){
+    if($.contains(this, document.getElementById("has_discount"))){
+        $(this).addClass("disocount");
+    }else{
+        $(this).addClass("no_discount");
+    }
+    $(this).unbind();         
+});
+};
 
 $(function(){
     $('#btn_300_300').click(function(){
