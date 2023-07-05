@@ -25,10 +25,13 @@ ul{
 ul .menu_title{
     color: cadetblue;
     font-weight: bold;
+    font-size: 20px;
+    padding-top: 30px;
 }
 
 ul li {
     list-style: none;
+    font-weight: bold;
 }
 
 .nav {
@@ -47,4 +50,15 @@ button{
 
 .veg_leaf{
     list-style-image: url('../images/vegan.png');
+    list-style-position: inside;
+}
+
+.fish_fish{
+    list-style-image: url('../images/fish.png');
+    list-style-position: inside;
+}
+
+.meat_meat{
+    list-style-image: url('../images/thanksgiving.png');
+    list-style-position: inside;
 }
