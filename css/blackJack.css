@@ -1,0 +1,23 @@
+#controls{
+    clear: both;
+}
+
+#my_hand{
+    clear: both;
+    border: 1px solid gray;
+    height: 250px;
+    width: 853px;
+}
+
+#my_hand div{
+    float: left;
+}
+
+h3{
+    display: inline;
+    padding-left: 40px;
+}
+
+.current_hand{
+    float: left;
+}
