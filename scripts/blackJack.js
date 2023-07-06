@@ -100,7 +100,7 @@ function hit(){
     //뽑은 코드가 이미 사용했던 카드라면 다시 시도합니다. 
     while(!good_card);
     good_card = false;
-    hand.sumCardTotal();
+    hand.sumCardTotal(c.value);
 }
 
 //클릭 시 deal함수를 호출한다. 
@@ -130,8 +130,8 @@ var hand = {
     cards:new Array(), 
     current_total : 0, 
 
-    sumCardTotal: function(){
-        this.current_total = 0;
+    sumCardTotal: function(index){
+        this.current_total += index;
         
         for(var i=0;i<this.cards.length;i++){
             var c = this.cards[i];
@@ -143,15 +143,15 @@ var hand = {
         if(this.current_total > 21){
             end();
             $("#imgResult").attr('src', '/images/blackJack/x.png').show();
-            $("hdrResult").html("BUST!").attr('class', 'lose');
+            $("#hdrResult").html("BUST!").attr('class', 'lose');
         }else if(this.current_total == 21){
             end();
             $("#imgResult").attr('src', '/images/blackJack/check.png').show();
-            $("hdrResult").html("BLACKJACK!").attr('class', 'win');
+            $("#hdrResult").html("BLACKJACK!").attr('class', 'win');
         }else if(this.current_total <= 21 && this.cards.length == 5){
             end();
             $("#imgResult").attr('src', '/images/blackJack/check.png').show();
-            $("hdrResult").html("BLACKJACK -5 CARD TRICK!").attr('class', 'win');
+            $("#hdrResult").html("BLACKJACK -5 CARD TRICK!").attr('class', 'win');
         }
     }
 }

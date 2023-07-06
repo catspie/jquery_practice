@@ -11,7 +11,7 @@ body{
 
 #btnDeal img{
     padding-top: 30px;
-    width: 200px;
+    width: 300px;
 }
 
 #controls{
@@ -29,7 +29,7 @@ body{
 
 #my_hand div{
     float: left;
-    width: 30px;
+    width: 100px;
     height: 100%;
 }
 
@@ -38,17 +38,17 @@ h3{
     padding-left: 40px;
 }
 
-.current_hand{
-    float: left;
-}
-
-#btnHit, #btnStick, #btnRestart{
-    float: left;
+#btnHit, #btnStick, #btnRestart, #hdrResult{
     display: inline-block;
     padding-top: 30px;
+    padding-right: 30px;
 }
 
 h3{
     display: inline;
     padding-right: 40px;
+}
+
+#imgResult{
+    width: 100px;
 }
