@@ -1,19 +1,29 @@
 body{
     display: flex;
     justify-content: center;
-    text-align: center;
     padding-top: 50px;
+}
+
+#my_hand img{
+    width: 100px;
+}
+
+#btnDeal img{
+    padding-top: 30px;
+    width: 200px;
 }
 
 #controls{
     clear: both;
+    display: inline-block;
+    padding-top: 30px;
 }
 
 #my_hand{
     clear: both;
     border: 1px solid gray;
-    height: 250px;
-    width: 853px;
+    width: 900px;
+    height: 500px;
 }
 
 #my_hand div{
@@ -27,4 +37,15 @@ h3{
 
 .current_hand{
     float: left;
+}
+
+#btnHit, #btnStick, #btnRestart{
+    float: left;
+    display: inline-block;
+    padding-top: 30px;
+}
+
+h3{
+    display: inline;
+    padding-right: 40px;
 }
